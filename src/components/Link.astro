@@ -1,5 +1,10 @@
 ---
-// Henter parametrene fra Astro.props
-const { href="#", target="_self"} = Astro.props; 
+const { href, label } = Astro.props;
 ---
-<a href={href} class="underline" target={target}><slot /></a>
+
+<a 
+  href={href} 
+  class="bg-blue-500 hover:bg-[radial-gradient(circle,white,transparent)] transition-all duration-500 p-6 rounded text-white hover:text-blue-500"
+>
+  {label}
+</a>
