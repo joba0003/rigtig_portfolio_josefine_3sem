@@ -16,27 +16,44 @@ import hund from '../assets/images/hund.png';
 
 
 	<MainLayout title="Josefines portfolio">
-	  
+		<div class="relative w-full h-screen grid grid-cols-12 grid-rows-4">
+			<!-- Baggrundsbillede -->
+			<img src="/group3.png" 
+				 class="absolute inset-0 w-full h-full object-cover -z-10" 
+				 alt="baggrund">
+		  
+			<!-- Tekst øverst venstre -->
+			<h1 class="col-start-3 col-end-4 row-start-1 self-start justify-self-start p-4 text-white text-9xl font-bold">
+JOSEFINE			</h1>
+		  
+			<!-- Tekst nederst højre -->
+			<h1 class="col-start-1 col-end-12 row-start-4 self-end justify-self-end p-4 text-white text-9xl font-bold">
+BANKE			</h1>
+		  
+			<!-- Billede i midten -->
+			<div class="col-start-6 col-span-2 row-start-2 row-span-2 flex justify-center items-center">
+			  <img src="/cover.jpg" alt="center" class="max-w-xs">
+			</div>
+		  </div>
+		  
+
 		<!-- Første hero-sektion -->
-		<div class="relative h-screen w-screen">
+		<!-- <div class="relative h-screen w-screen">
 		  <Image 
 			src={group3} 
 			alt="background" 
 			class="absolute inset-0 w-full h-full object-contain bg-background-pale" 
 		  />
-	  
-		  <!-- Tekst -->
-		  <h1 class="absolute text-textdefault font-bold z-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl"
+	   -->
+<!-- 		
+		  <h1 class="absolute text-textdefault font-bold z-10 text-3xl sm:text-3xl md:text-5xl lg:text-6xl"
 			  style="top: 20%; left: 20%;">
 			JOSEFINE
 		  </h1>
 
-		 <div class="absolute z-10" style="top: 10%; right: 5%;"> <Image 
-		src={moon} 
-		alt="grafik" 
 		
-	  /></div>
-<div class="absolute z-10" style="bottom: 5%; left: 5%;">
+	</div>
+<div class="absolute z-10 w-50" style="bottom: 5%; left: 20%;">
 	  <Image 
 	  src={hund} 
 	  alt="grafik" 
@@ -47,7 +64,7 @@ import hund from '../assets/images/hund.png';
 			BANKE
 		  </h1>
 	  
-		  <!-- Overlay billede -->
+		 
 		  <div class="absolute inset-0 flex items-center justify-center z-10">
 			<Image 
 			  src={cover} 
@@ -58,7 +75,7 @@ import hund from '../assets/images/hund.png';
 		  
 		</div>
 
-		<!-- Ny sektion med group4 længere nede -->
+		
 		<div class="relative h-screen w-screen">
 		  <Image 
 			src={group4} 
@@ -66,14 +83,14 @@ import hund from '../assets/images/hund.png';
 			class="w-full h-auto object-contain object-center bg-background-pale"
 		  />
 
-	<!-- Overskrift placeret øverst venstre -->
-	<h2 class="absolute text-amber-100 font-bold z-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl"
+
+	<h2 class="absolute text-textdefault font-bold z-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl"
 	style="top: 20%; left: 20%;">
   RETROSPECT
 </h2>
 
-<p class="absolute inset-0 flex items-center pl-80 pr-80 text-amber-100 ">Hej, mit navn er Josefine Hoeg Banke. Jeg går nuværende på erhvervsakademiet københavn på tredje semester og søger en praktikplads hos jer. Jeg har igennem årene arbejdet med kunst som maleri og tegning og skulptur. jeg har udstillet på galleri udtryk, demokratigaragen, støberiet, samt selv været kurator på egne udstillinger og lavet andre mindre projekter. Jeg er kreativ og nytænkende, altid med kant!  Nedenfor kan i se nogle billeder der repræsenterer mig. Billederne er også ment som biografiske fotografiværker. </p>
-			</div>
+<p class="absolute inset-0 flex items-center pl-80 pr-80 text-textdefault ">Hej, mit navn er Josefine Hoeg Banke. Jeg går nuværende på erhvervsakademiet københavn på tredje semester og søger en praktikplads hos jer. Jeg har igennem årene arbejdet med kunst som maleri og tegning og skulptur. jeg har udstillet på galleri udtryk, demokratigaragen, støberiet, samt selv været kurator på egne udstillinger og lavet andre mindre projekter. Jeg er kreativ og nytænkende, altid med kant!  Nedenfor kan i se nogle billeder der repræsenterer mig. Billederne er også ment som biografiske fotografiværker. </p>
+			</div> -->
 
 	  </MainLayout>
 	  
