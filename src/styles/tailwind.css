@@ -7,13 +7,10 @@
 
 @theme {
   /* Her tilføjes theme variable // tokens */
-  --background-pale: #e4e3d7;
-  --headerfooter-default: #020d7d;
-  --text-default: #e4e3d7;
-  --headerfooterblur: #5da515;
-  --headerfooterfonthover: #c3e9fb;
-  --headerfooterfontdefault: #020d7d;
-  --headerfooterhover: #c3e9fb;
+  --color-background-pale: #e4e3d7;
+  --color-brown: #432403;
+  --color-textdefault: #c3e9fb;
+  --color-green: #5da515;
 }
 
 @layer base {
