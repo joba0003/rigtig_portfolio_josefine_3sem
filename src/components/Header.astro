@@ -2,12 +2,12 @@
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); 
 ---
-<header x-data="{ showmenu: false }" class="bg-background-pale" >
+<header x-data="{ showmenu: false }" class="color-change-2x" >
     <div id="navbar" class="container mx-auto p-3 flex flex-row justify-between items-center">
         <div id="logo" class="">
-            <a href="#" class=""><img class="w-40" src="/moon.png" alt=""></a>
+            <a href="#" class=""><img class="w-40 hover:scale-120 animate-fade-down" src="/moon.png" alt=""></a>
         </div>
-        <nav id="desktopmenu" class="hidden lg:block">
+        <nav id="desktopmenu" class="hidden lg:block animate-fade-down">
             <ul class="flex flex-row gap-4">
                 <li class="transition-all duration-500 p-6 rounded text-brown hover:text-green text-2xl"><a href="/Galleri/" class={currentPath === "komponentbibliotek/" ? "font-bold" : ""}>Galleri</a></li>
                 <li class=" transition-all duration-500 p-6 rounded text-brown hover:text-green text-2xl"><a href="/Kontakt/" class={currentPath === "komponentbibliotek/" ? "font-bold" : ""}>Kontakt</a></li>
